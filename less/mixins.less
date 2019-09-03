@@ -1,0 +1,12 @@
+.font_add_mixin(@fontname, @fontstyle, @fontweight, @fontpath) {
+  @font-face {
+    font-family: @fontname;
+    font-style: @fontstyle;
+    font-weight: @fontweight;
+    src: local(@fontname),
+    url("@{fontpath}.woff2") format('woff2'),
+    url("@{fontpath}.woff") format('woff'),
+    url("@{fontpath}.ttf") format('ttf'),
+    url("@{fontpath}.eot") format('eot');
+  }
+}
