@@ -13,6 +13,9 @@
 .font_add_mixin("Roboto Regular", normal, 400, "../fonts/Roboto-Regular");
 
 @width: 1920px;
+@brown: #998675;
+@white: #fff;
+@grey: #a3a2a0;
 
 body {
   margin: 0;
@@ -40,6 +43,18 @@ body {
       font: 400 34px/1.2 "Raleway Regular";
     }
   }
+  .logo:hover .logo-svg {
+    fill: @brown;
+  }
+  .logo:hover .logo-txt {
+    color: @brown;
+  }
+  .logo:active .logo-svg {
+    fill: @white;
+  }
+  .logo:active .logo-txt {
+    color: @white;
+  }
   .menu {
     display: flex;
     align-items: center;
@@ -49,48 +64,117 @@ body {
       width: 640px;
       justify-content: space-between;
       margin: 0 60px 0 0;
-      li {
-        color: #fff;
+      li a {
+        text-decoration: none;
+        color: @white;
         font: 300 14px/1.2 "Montserrat Light";
+      }
+      li a:hover {
+        color: @brown;
       }
     }
     .menu-basket {
-      fill: #fff;
+      fill: @white;
       margin: 0 25px 0 0;
     }
+    .menu-basket:hover {
+      fill: @brown;
+    }
     .menu-search {
-      fill: #fff;
+      fill: @white;
+    }
+    .menu-search:hover {
+      fill: @brown;
     }
   }
   .slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 270px 0 0 0;
     .slider-leftbut {
       opacity: 0.502;
-      fill: #a3a2a0;
+      fill: @grey;
+      margin: 100px 0 0 0;
+    }
+    .slider-leftbut:hover {
+      fill: @brown;
     }
     .slider-descr {
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 0 325px 0;
       .slider-descr-header2 {
         font: 500 36px/1.2 "Raleway Medium";
-        color: #fff;
+        color: @white;
+        margin: 0 0 18px 0;
+        padding: 0;
       } 
       .slider-descr-header1 {
         font: 800 52px/1.2 "Raleway ExtraBold";
-        color: #fff;
+        color: @white;
+        margin: 0 0 20px 0;
+        padding: 0;
       }
       .slider-descr-text {
         font: 300 16px/24px "Montserrat Light";
-        color: #fff;
+        color: @white;
+        text-align: center;
+        margin: 0 0 50px 0;
+        padding: 0;
       }
       .slider-descr-button {
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        min-height: 50px;
+        border-radius: 3px;
+        background-color: @brown;
+        text-decoration: none;
+        font: 800 14px/23px "Raleway ExtraBold";
+        text-transform: uppercase;
+        color: @white;
+      }
+      .slider-descr-button:hover {
+        background-color: @white;
+        color: @brown;
+      }
+      .slider-descr-button:active {
+        background-color: @brown;
+        color: @white;
       }
     }
     .slider-rightbut {
       opacity: 0.502;
-      fill: #a3a2a0;
+      fill: @grey;
+      margin: 100px 0 0 0;
+    }
+    .slider-rightbut:hover {
+      fill: @brown;
     }
     .pagination {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin: 0 0 40px 0;
       .pagination-link {
-        
+        width: 10px;
+        min-height: 10px;
+        border-radius: 5px;
+        background-color: #9c9b9a;
+        margin: 0 10px 0 0;
+        border: 2px solid transparent;
+      }
+      .pagination-link:hover {
+        border: 2px solid @brown;
+        background-color: transparent;
+      }
+      .pagination-link:active {
+        background-color: @brown;
       }
     }
     
