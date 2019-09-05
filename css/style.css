@@ -262,7 +262,6 @@ body {
 }
 .pres {
   width: 100%;
-  margin: 0 auto;
 }
 .pres .pres-suggest {
   display: flex;
@@ -308,4 +307,25 @@ body {
 }
 .pres .pres-suggest .pres-suggest-fig:hover .pres-suggest-figcaption-text::after {
   border-bottom: 3px solid #998675;
+}
+.pres .pres-promo {
+  width: 100%;
+  background-image: url(../img/pres-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0 520px 0;
+}
+.pres .pres-promo .pres-promo-header {
+  width: 100%;
+  margin: 0 0 25px 0;
+  text-align: center;
+  font: 600 30px/1.2 "Raleway SemiBold";
+  color: #555555;
+}
+.pres .pres-promo .pres-promo-text {
+  width: 760px;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  font: 300 16px/28px "Montserrat Light";
+  color: #8c8c8c;
 }
