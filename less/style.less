@@ -13,14 +13,18 @@
 .font_add_mixin("Roboto Regular", normal, 400, "../fonts/Roboto-Regular");
 
 @width: 1920px;
+@brown: #998675;
+@white: #fff;
+@grey: #a3a2a0;
 
 body {
-  margin: 0;
   padding: 0;
+  width: @width;
+  margin: 0 auto;
 }
 
 .header {
-  width: @width;
+  width: 100%;
   background-image: url(../img/header-bg.jpg);
   display: flex;
   flex-wrap: wrap;
@@ -40,6 +44,18 @@ body {
       font: 400 34px/1.2 "Raleway Regular";
     }
   }
+  .logo:hover .logo-svg {
+    fill: @brown;
+  }
+  .logo:hover .logo-txt {
+    color: @brown;
+  }
+  .logo:active .logo-svg {
+    fill: @white;
+  }
+  .logo:active .logo-txt {
+    color: @white;
+  }
   .menu {
     display: flex;
     align-items: center;
@@ -49,48 +65,139 @@ body {
       width: 640px;
       justify-content: space-between;
       margin: 0 60px 0 0;
-      li {
-        color: #fff;
+      li a {
+        text-decoration: none;
+        color: @white;
         font: 300 14px/1.2 "Montserrat Light";
+      }
+      li a:hover {
+        color: @brown;
       }
     }
     .menu-basket {
-      fill: #fff;
+      width: 18px;
+      min-height: 24px;
+      background-image: url(../img/icon-basket.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-color: transparent;
+      border: none;
       margin: 0 25px 0 0;
     }
-    .menu-search {
-      fill: #fff;
+    .menu-form-search {
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/icon-search.png);
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+      background-color: transparent;
+      border: none;
     }
+    .menu-form-search:focus {
+      width: 200px;
+      transition: width 1s ease-out;
+      outline: none;
+      padding: 2px 26px 2px 5px;
+      font: 300 16px/24px "Montserrat Light";
+      color: @white;
+    }
+    .menu-form-search::-webkit-search-decoration,
+    .menu-form-search::-webkit-search-cancel-button,
+    .menu-form-search::-webkit-search-results-button,
+    .menu-form-search::-webkit-search-results-decoration { display: none; } //Отключает крестик в Chrome
+    .menu-form-search::-ms-clear {  display: none; width : 0; height: 0; }
+    .menu-form-search::-ms-reveal {  display: none; width : 0; height: 0; } //Отключает крестик в IE
   }
   .slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 270px 0 0 0;
     .slider-leftbut {
       opacity: 0.502;
-      fill: #a3a2a0;
+      fill: @grey;
+      margin: 100px 0 0 0;
+    }
+    .slider-leftbut:hover {
+      fill: @brown;
     }
     .slider-descr {
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 0 325px 0;
       .slider-descr-header2 {
         font: 500 36px/1.2 "Raleway Medium";
-        color: #fff;
+        color: @white;
+        margin: 0 0 18px 0;
+        padding: 0;
       } 
       .slider-descr-header1 {
         font: 800 52px/1.2 "Raleway ExtraBold";
-        color: #fff;
+        color: @white;
+        margin: 0 0 20px 0;
+        padding: 0;
       }
       .slider-descr-text {
         font: 300 16px/24px "Montserrat Light";
-        color: #fff;
+        color: @white;
+        text-align: center;
+        margin: 0 0 50px 0;
+        padding: 0;
       }
       .slider-descr-button {
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        min-height: 50px;
+        border-radius: 3px;
+        background-color: @brown;
+        text-decoration: none;
+        font: 800 14px/23px "Raleway ExtraBold";
+        text-transform: uppercase;
+        color: @white;
+      }
+      .slider-descr-button:hover {
+        background-color: @white;
+        color: @brown;
+      }
+      .slider-descr-button:active {
+        background-color: @brown;
+        color: @white;
       }
     }
     .slider-rightbut {
       opacity: 0.502;
-      fill: #a3a2a0;
+      fill: @grey;
+      margin: 100px 0 0 0;
+    }
+    .slider-rightbut:hover {
+      fill: @brown;
     }
     .pagination {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin: 0 0 40px 0;
       .pagination-link {
-        
+        width: 10px;
+        min-height: 10px;
+        border-radius: 5px;
+        background-color: #9c9b9a;
+        margin: 0 10px 0 0;
+        border: 2px solid transparent;
+      }
+      .pagination-link:hover {
+        border: 2px solid @brown;
+        background-color: transparent;
+      }
+      .pagination-link:active {
+        background-color: @brown;
       }
     }
     
