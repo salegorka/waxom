@@ -61,6 +61,8 @@ body {
 .header {
   width: 100%;
   background-image: url(../img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-wrap: wrap;
   padding: 40px 0 0 0;
@@ -171,6 +173,9 @@ body {
 .header .slider .slider-leftbut:hover {
   fill: #998675;
 }
+.header .slider .slider-leftbut:active {
+  fill: #a3a2a0;
+}
 .header .slider .slider-descr {
   width: 600px;
   display: flex;
@@ -226,6 +231,9 @@ body {
 .header .slider .slider-rightbut:hover {
   fill: #998675;
 }
+.header .slider .slider-rightbut:active {
+  fill: #a3a2a0;
+}
 .header .slider .pagination {
   display: flex;
   width: 100%;
@@ -233,17 +241,71 @@ body {
   margin: 0 0 40px 0;
 }
 .header .slider .pagination .pagination-link {
-  width: 10px;
-  min-height: 10px;
-  border-radius: 5px;
+  width: 8px;
+  min-height: 8px;
   background-color: #9c9b9a;
   margin: 0 10px 0 0;
+  border-radius: 5px;
   border: 2px solid transparent;
 }
 .header .slider .pagination .pagination-link:hover {
   border: 2px solid #998675;
   background-color: transparent;
+  transform: scale(1.3);
 }
 .header .slider .pagination .pagination-link:active {
   background-color: #998675;
+}
+.main {
+  width: 100%;
+  margin: 0 auto;
+}
+.pres {
+  width: 100%;
+  margin: 0 auto;
+}
+.pres .pres-suggest {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+.pres .pres-suggest .pres-suggest-fig {
+  width: 270px;
+  margin: 75px 15px 80px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pres .pres-suggest .pres-suggest-fig .pres-suggest-fig-svg {
+  fill: #555555;
+}
+.pres .pres-suggest .pres-suggest-fig .pres-suggest-figcaption {
+  text-align: center;
+}
+.pres .pres-suggest .pres-suggest-fig .pres-suggest-figcaption .pres-suggest-figcaption-header {
+  font: 600 22px/1.2 "Raleway SemiBold";
+  color: #555555;
+  margin: 25px 0 20px 0;
+}
+.pres .pres-suggest .pres-suggest-fig .pres-suggest-figcaption .pres-suggest-figcaption-text {
+  font: 300 14px/22px "Montserrat Light";
+  color: #8c8c8c;
+  margin: 0;
+}
+.pres .pres-suggest .pres-suggest-fig .pres-suggest-figcaption .pres-suggest-figcaption-text::after {
+  content: "";
+  display: block;
+  width: 70px;
+  margin: 30px auto 0 auto;
+  border-bottom: 3px solid #f1eee9;
+}
+.pres .pres-suggest .pres-suggest-fig:hover .pres-suggest-fig-svg {
+  fill: #998675;
+}
+.pres .pres-suggest .pres-suggest-fig:hover .pres-suggest-figcaption-header {
+  color: #998675;
+}
+.pres .pres-suggest .pres-suggest-fig:hover .pres-suggest-figcaption-text::after {
+  border-bottom: 3px solid #998675;
 }
