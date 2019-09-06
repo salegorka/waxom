@@ -329,3 +329,180 @@ body {
   font: 300 16px/28px "Montserrat Light";
   color: #8c8c8c;
 }
+.purchase {
+  width: 100%;
+  padding: 50px 375px 50px 375px;
+  box-sizing: border-box;
+  background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+}
+.purchase .purchase-wrapper {
+  float: left;
+  margin: 0 460px 0 0;
+}
+.purchase .purchase-header {
+  font: 400 28px/1.2 "Raleway Regular";
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  width: 540px;
+}
+.purchase .purchase-header .purchase-header-color {
+  color: #c7b299;
+}
+.purchase .purchase-text {
+  width: 540px;
+  margin: 0;
+  padding: 0;
+  font: 300 18px/1.2 "Montserrat Light";
+  color: #615855;
+}
+.purchase .purchase-button {
+  display: flex;
+  width: 170px;
+  min-height: 50px;
+  border-radius: 3px;
+  background-color: #998675;
+  color: #ffffff;
+  font: 800 14px/23px "Raleway ExtraBold";
+  text-transform: uppercase;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+.purchase .purchase-button:hover {
+  background-color: #ffffff;
+  color: #998675;
+}
+.purchase .purchase-button:active {
+  background-color: #998675;
+  color: #ffffff;
+}
+.purchase::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects .projects-header {
+  font: 600 30px/1.2 "Raleway SemiBold";
+  color: #555555;
+  margin: 75px 0 20px 0;
+  padding: 0;
+}
+.projects .projects-text {
+  font: 300 16px/28px "Montserrat Light";
+  color: #8c8c8c;
+  margin: 0 0 35px 0;
+  padding: 0;
+}
+.projects .projects-menu .projects-menu-but {
+  font: 300 14px/21px "Montserrat Light";
+  color: #8c8c8c;
+  border: 1px solid #ebebeb;
+  background-color: transparent;
+  padding: 5px 15px 5px 15px;
+  margin: 0 5px 40px 5px;
+  outline: none;
+}
+.projects .projects-menu .projects-menu-but:hover {
+  background-color: #998675;
+  color: #fff;
+}
+.projects .projects-menu .projects-menu-but:active {
+  background-color: transparent;
+  color: #998675;
+}
+.projects .projects-articles {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects .projects-articles .projects-articles-one {
+  width: 370px;
+  background-color: #fbfaf8;
+  position: relative;
+  padding: 0 0 25px 0;
+  margin: 0 15px 30px 15px;
+}
+.projects .projects-articles .projects-articles-one .projects-articles-one-header {
+  font: 500 20px/1.2 "Raleway Medium";
+  color: #c7b299;
+  margin: 25px 0 6px 30px;
+  padding: 0;
+}
+.projects .projects-articles .projects-articles-one .projects-articles-one-text {
+  font: 300 14px/20px "Montserrat Light";
+  color: #d1d1d1;
+  margin: 0 0 0 30px;
+  padding: 0;
+}
+.projects .projects-articles .projects-articles-one .projects-articles-one-lock {
+  display: none;
+  position: absolute;
+  top: 120px;
+  left: 127px;
+  fill: #ffffff;
+}
+.projects .projects-articles .projects-articles-one .projects-articles-one-search {
+  display: none;
+  position: absolute;
+  top: 120px;
+  left: 201px;
+  fill: #ffffff;
+}
+.projects .projects-articles .projects-articles-one .projects-articles-one-lock:hover {
+  fill: #a39482;
+}
+.projects .projects-articles .projects-articles-one .projects-articles-one-search:hover {
+  fill: #a39482;
+}
+.projects .projects-articles .projects-articles-one:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 217px;
+  left: 20px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #fbfaf8;
+}
+.projects .projects-articles .projects-articles-one:hover {
+  background-color: #362f2d;
+}
+.projects .projects-articles .projects-articles-one:hover .projects-articles-one-header {
+  color: #998675;
+}
+.projects .projects-articles .projects-articles-one:hover .projects-articles-one-text {
+  color: #ffffff;
+}
+.projects .projects-articles .projects-articles-one:hover .projects-articles-one-search {
+  display: block;
+}
+.projects .projects-articles .projects-articles-one:hover .projects-articles-one-lock {
+  display: block;
+}
+.projects .projects-articles .projects-articles-one:hover:before {
+  border-bottom: 10px solid #362f2d;
+}
+.projects .projects-loadbutt {
+  width: 170px;
+  min-height: 50px;
+  background-color: #998675;
+  border-radius: 3px;
+  font: 800 14px/23px "Raleway ExtraBold";
+  color: #ffffff;
+  text-transform: uppercase;
+  outline: none;
+  margin: 8px 0 80px 0;
+}
+.projects .projects-loadbutt:hover {
+  background-color: #ffffff;
+  color: #998675;
+}
+.projects .projects-loadbutt:active {
+  background-color: #998675;
+  color: #ffffff;
+}
