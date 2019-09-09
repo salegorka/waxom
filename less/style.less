@@ -14,6 +14,7 @@
 
 @width: 1920px;
 @brown: #998675;
+@light-brown: #c7b299;
 @white: #fff;
 @grey: #a3a2a0;
 
@@ -225,46 +226,45 @@ body {
     background-color: @white;
     justify-content: center;
     align-items: center;
-    .pres-suggest-fig {
+    .pres-suggest-wrap {
       width: 270px;
       margin: 75px 15px 80px 15px;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
       .pres-suggest-fig-svg {
         fill: #555555;
       }
-      .pres-suggest-figcaption {
+      .pres-suggest-header {
+        font: 600 22px/1.2 "Raleway SemiBold";
+        color: #555555;
+        margin: 25px 0 20px 0;
+        }
+      .pres-suggest-text {
         text-align: center;
-        .pres-suggest-figcaption-header {
-          font: 600 22px/1.2 "Raleway SemiBold";
-          color: #555555;
-          margin: 25px 0 20px 0;
+        font: 300 14px/22px "Montserrat Light";
+        color: #8c8c8c;
+        margin: 0;
         }
-        .pres-suggest-figcaption-text {
-          font: 300 14px/22px "Montserrat Light";
-          color: #8c8c8c;
-          margin: 0;
-        }
-        .pres-suggest-figcaption-text::after {
-          content: "";
-          display: block;
-          width: 70px;
-          margin: 30px auto 0 auto;
-          border-bottom: 3px solid #f1eee9;
+      .pres-suggest-text::after {
+        content: "";
+        display: block;
+        width: 70px;
+        margin: 30px auto 0 auto;
+        border-bottom: 3px solid #f1eee9;
         }
       }
     }
-    .pres-suggest-fig:hover .pres-suggest-fig-svg {
-      fill: @brown;
+    .pres-suggest-wrap:hover .pres-suggest-svg {
+      fill: @light-brown;
     }
-    .pres-suggest-fig:hover .pres-suggest-figcaption-header {
-      color: @brown;
+    .pres-suggest-wrap:hover .pres-suggest-header {
+      color: @light-brown;
     }
-    .pres-suggest-fig:hover .pres-suggest-figcaption-text::after {
-      border-bottom: 3px solid @brown;
+    .pres-suggest-wrap:hover .pres-suggest-text::after {
+      border-bottom: 3px solid @light-brown;
     }
-  }
   .pres-promo {
     width: 100%;
     background-image: url(../img/pres-bg.jpg);

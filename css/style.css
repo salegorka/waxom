@@ -269,44 +269,43 @@ body {
   justify-content: center;
   align-items: center;
 }
-.pres .pres-suggest .pres-suggest-fig {
+.pres .pres-suggest .pres-suggest-wrap {
   width: 270px;
   margin: 75px 15px 80px 15px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-.pres .pres-suggest .pres-suggest-fig .pres-suggest-fig-svg {
+.pres .pres-suggest .pres-suggest-wrap .pres-suggest-fig-svg {
   fill: #555555;
 }
-.pres .pres-suggest .pres-suggest-fig .pres-suggest-figcaption {
-  text-align: center;
-}
-.pres .pres-suggest .pres-suggest-fig .pres-suggest-figcaption .pres-suggest-figcaption-header {
+.pres .pres-suggest .pres-suggest-wrap .pres-suggest-header {
   font: 600 22px/1.2 "Raleway SemiBold";
   color: #555555;
   margin: 25px 0 20px 0;
 }
-.pres .pres-suggest .pres-suggest-fig .pres-suggest-figcaption .pres-suggest-figcaption-text {
+.pres .pres-suggest .pres-suggest-wrap .pres-suggest-text {
+  text-align: center;
   font: 300 14px/22px "Montserrat Light";
   color: #8c8c8c;
   margin: 0;
 }
-.pres .pres-suggest .pres-suggest-fig .pres-suggest-figcaption .pres-suggest-figcaption-text::after {
+.pres .pres-suggest .pres-suggest-wrap .pres-suggest-text::after {
   content: "";
   display: block;
   width: 70px;
   margin: 30px auto 0 auto;
   border-bottom: 3px solid #f1eee9;
 }
-.pres .pres-suggest .pres-suggest-fig:hover .pres-suggest-fig-svg {
-  fill: #998675;
+.pres .pres-suggest-wrap:hover .pres-suggest-svg {
+  fill: #c7b299;
 }
-.pres .pres-suggest .pres-suggest-fig:hover .pres-suggest-figcaption-header {
-  color: #998675;
+.pres .pres-suggest-wrap:hover .pres-suggest-header {
+  color: #c7b299;
 }
-.pres .pres-suggest .pres-suggest-fig:hover .pres-suggest-figcaption-text::after {
-  border-bottom: 3px solid #998675;
+.pres .pres-suggest-wrap:hover .pres-suggest-text::after {
+  border-bottom: 3px solid #c7b299;
 }
 .pres .pres-promo {
   width: 100%;
