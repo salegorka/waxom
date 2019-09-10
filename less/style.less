@@ -522,3 +522,94 @@ body {
     }
   }
 }
+
+.mobile {
+  width: 100%;
+  margin: 0;
+  padding: 200px 380px 0 825px;
+  box-sizing: border-box;
+  background-image: url(../img/mobile-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .mobile-wrapper {
+    min-height: 500px;
+    .mobile-header {
+      font: 600 30px/1.2 "Raleway SemiBold";
+      color: #555555;
+    }
+    .mobile-text {
+      font: 300 16px/28px "Montserrat Light";
+      color: #8c8c8c;
+    }
+    .mobile-details {
+      .mobile-details-summary {
+        font: 300 16px/32px "Montserrat Light";
+        color: #8c8c8c;
+      }
+      .mobile-details-text {
+        font: 300 16px/32px "Montserrat Light";
+        color: #8c8c8c;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.stats {
+  width: 100%;
+  background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+  padding: 70px 500px 60px 500px;
+  box-sizing: border-box;
+  .stats-wrapper {
+    display: flex;
+    justify-content: space-between;
+    .stats-one {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .stats-one-svg {
+        fill: @light-brown;
+      }
+      .stats-one-number {
+        font: 200 48px/36px "Montserrat ExtraLight";
+        color: @white;
+        margin: 25px 0 10px 0;
+      }
+      .stats-one-text {
+        font: 300 14px/20px "Montserrat Light";
+        color: @light-brown;
+        margin: 0 0 30px 0;
+      }
+    }
+    .stats-one::after {
+      content: "";
+      width: 30px;
+      border-bottom: 2px solid @white;
+    }
+  }
+}
+
+.posts {
+  .posts-header {
+    
+  }
+  .posts-text {
+    
+  }
+  .posts-wrapper {
+    .posts-article {
+      .posts-article-header {
+        font: 500 20px/1.2 "Raleway Medium";
+        color: #555555;
+      }
+      .posts-article-text {
+        font: 300 14px/22px "Montserrat Light";
+        color: #8c8c8c;
+      }
+      .posts-article-link {
+        
+      }
+    }
+  }
+}
