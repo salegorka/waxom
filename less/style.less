@@ -484,17 +484,41 @@ body {
       top: 0;
       left: 0;
   }
-  .videopres-btn {
-    display: block;
-    width: 100px;
-    height: 100px;
+  .videopres-info {
     position: absolute;
-    opacity: 0.2;
-    border-radius: 50px;
-    border: none;
-    background-color: #000000;
-  }
-  .videopres-btn-svg {
-    fill: #ffffff;
+    left: 36%;
+    top: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .videopres-info-btn {
+      display: block;
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      border: none;
+      background-color: rgba(0, 0, 0, 0.2);
+      .videopres-info-btn-svg {
+        fill: #fff;
+      }
+    }
+    .videopres-info-header {
+      font: 500 30px/1.2 "Raleway Medium";
+      color: #fff;
+      margin: 40px 0 20px 0;
+      padding: 0;
+    }
+    .videopres-info-text {
+      font: 300 16px/28px "Montserrat Light";
+      color: #fff;
+      width: 560px;
+      text-align: center;
+      margin: 0 0 25px 0;
+      padding: 0;
+    }
+    .videopres-info-time {
+      font: 400 14px/24px "Montserrat Regular";
+      color: @light-brown;
+    }
   }
 }
