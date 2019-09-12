@@ -619,11 +619,167 @@ body {
   width: 30px;
   border-bottom: 2px solid #ffffff;
 }
+.posts {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 80px 375px 80px 375px;
+}
+.posts .posts-header {
+  font: 600 30px/1.2 "Raleway SemiBold";
+  color: #555555;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+.posts .posts-text {
+  font: 300 16px/28px "Montserrat Light";
+  color: #8c8c8c;
+  width: 760px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  padding: 0;
+}
+.posts .posts-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.posts .posts-wrapper .posts-article {
+  width: 370px;
+  border: 1px solid #f8f8f8;
+  position: relative;
+  padding: 0 0 28px 0;
+}
 .posts .posts-wrapper .posts-article .posts-article-header {
   font: 500 20px/1.2 "Raleway Medium";
   color: #555555;
+  margin: 25px 0 0 25px;
+  padding: 0;
 }
 .posts .posts-wrapper .posts-article .posts-article-text {
   font: 300 14px/22px "Montserrat Light";
   color: #8c8c8c;
+  margin: 12px 0 20px 25px;
+  padding: 0;
+}
+.posts .posts-wrapper .posts-article .posts-article-link {
+  text-decoration: none;
+  font: 300 14px/20px "Montserrat Light";
+  color: #c7b299;
+  margin: 0 0 0 25px;
+  padding: 0;
+}
+.posts .posts-wrapper .posts-article .posts-article-link:after {
+  content: "";
+  display: inline-block;
+  border: 5px solid transparent;
+  border-left: 5px solid #c7b299;
+  margin: 0 0 0 8px;
+}
+.posts .posts-wrapper .posts-article .posts-article-pagination {
+  position: absolute;
+  bottom: 200px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0;
+}
+.posts .posts-wrapper .posts-article .posts-article-pagination .posts-article-pagination-link {
+  width: 8px;
+  min-height: 8px;
+  background-color: #ffffff;
+  opacity: 0.3;
+  margin: 0 10px 0 0;
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+.posts .posts-wrapper .posts-article .posts-article-pagination-link:hover {
+  border: 2px solid #998675;
+  background-color: transparent;
+  transform: scale(1.3);
+  opacity: 1;
+}
+.posts .posts-wrapper .posts-article .posts-article-pagination-link:active {
+  background-color: #998675;
+  opacity: 1;
+}
+.posts .posts-wrapper .posts-article .posts-article-date {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.posts .posts-wrapper .posts-article .posts-article-date .posts-article-date-number {
+  font: 300 24px/20px "Montserrat Light";
+  color: #fff;
+  display: block;
+  width: 50px;
+  min-height: 35px;
+  background-color: #363636;
+  border-radius: 3px 3px 0 0;
+  text-align: center;
+  padding: 8px 0 8px 0;
+  box-sizing: border-box;
+}
+.posts .posts-wrapper .posts-article .posts-article-date .posts-article-date-month {
+  font: 400 12px/20px "Roboto Regular";
+  color: #fff;
+  display: block;
+  width: 50px;
+  min-height: 25px;
+  background-color: #252525;
+  border-radius: 0 0 3px 3px;
+  text-align: center;
+  padding: 5px 0 5px 0;
+  box-sizing: border-box;
+}
+.posts .posts-wrapper .posts-article:hover {
+  background-color: #362f2d;
+}
+.posts .posts-wrapper .posts-article:hover .posts-article-img {
+  opacity: 0.5;
+}
+.posts .posts-wrapper .posts-article:hover .posts-article-header {
+  color: #c7b299;
+}
+.posts .posts-wrapper .posts-article:hover .posts-article-date-number {
+  background-color: #c7b299;
+}
+.posts .posts-wrapper .posts-article:hover .posts-article-date-month {
+  background-color: #a48d72;
+}
+.posts .posts-control {
+  width: 100%;
+  text-align: center;
+  margin: 40px 0 0 0;
+}
+.posts .posts-control .posts-control-left {
+  display: inline-block;
+}
+.posts .posts-control .posts-control-left .posts-control-left-svg {
+  fill: #d1d1d1;
+}
+.posts .posts-control .posts-control-left:hover .posts-control-left-svg {
+  fill: #c7b299;
+}
+.posts .posts-control .posts-control-right {
+  display: inline-block;
+}
+.posts .posts-control .posts-control-right .posts-control-right-svg {
+  fill: #d1d1d1;
+}
+.posts .posts-control .posts-control-right:hover .posts-control-right-svg {
+  fill: #c7b299;
+}
+.partners {
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url(../img/partners-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 140px 400px 140px 400px;
+}
+.partners .partners-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
