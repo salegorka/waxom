@@ -763,3 +763,153 @@ body {
     align-items: center;
   }
 }
+
+.widgets {
+  background-color: #191919;
+  width: 100%;
+  display: flex;
+  padding: 80px 375px 80px 375px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  .widgets-info {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .widgets-info-logo-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      margin: 0 0 20px 0;
+      .widgets-info-logo-svg {
+        fill: #fff;
+      }
+      .widgets-info-logo-text {
+        color: #fff;
+        font: 400 34px/1.2 "Raleway Regular";
+      }
+    }
+    .widgets-info-logo-link:hover .widgets-info-logo-svg {
+      fill: @brown;
+    }
+    .widgets-info-logo-link:hover .widgets-info-logo-text {
+      color: @brown;
+    }
+    .widgets-info-logo-link:active .widgets-info-logo-svg {
+      fill: @white;
+    }
+    .widgets-info-logo-link:active .widgets-info-logo-text {
+      color: @white;
+    }
+    .widgets-info-text {
+      font: 300 14px/24px "Montserrat Light";
+      color: #555555;
+      padding: 0;
+      margin: 0 0 28px 0;
+    }
+    .widgets-info-link {
+      text-decoration: none;
+      font: 400 14px/20px "Montserrat Regular";
+      color: #d1d1d1;
+    }
+    .widgets-info-link:after {
+      content: "";
+      display: inline-block;
+      border: 5px solid transparent;
+      border-left: 5px solid @white;
+      margin: 0 0 0 8px;
+    }
+  }
+  .widgets-posts {
+    width: 270px;
+    .widgets-posts-header {
+      font: 700 24px/1.2 "Raleway Bold";
+      color: @white;
+    }
+    .widgets-posts-one {
+      .widgets-posts-one-date {
+        font: 300 12px/20px "Montserrat Light";
+        color: #363636;
+      }
+      .widgets-posts-one-text {
+        font: 300 14px/20px "Montserrat Light";
+        color: #555555;
+      }
+    }
+    .widgets-posts-one:hover {
+      .widgets-posts-one-date {
+        color: @white;
+      }
+      .widgets-posts-one-text {
+        color: @light-brown;
+      }
+    }
+  }
+  .widgets-twitter {
+    width: 270px;
+    .widgets-twitter-header {
+      font: 700 24px/1.2 "Raleway Bold";
+      color: @white;
+    }
+    .widgets-twitter-one {
+      .widgets-twitter-one-text {
+        font: 300 14px/20px "Montserrat Light";
+        color: #555555;
+      }
+      .widgets-twitter-one-date {
+        font: 300 12px/20px "Montserrat Light";
+        color: #363636;
+      }
+    }
+    .twitter-author {
+      color: #00bff3;
+    }
+    .twitter-hashtag {
+      color: #00bff3;
+    }
+    .twitter-link {
+      color: #959595;
+      text-decoration: none;
+    }
+  }
+  .dribbble-widget {
+    width: 280px;
+    .dribbble-widget-header {
+      font: 700 24px/1.2 "Raleway Bold";
+      color: @white;
+    }
+  }
+}
+
+.footer {
+  font: 300 13px/20px "Montserrat Light";
+  color: #555555;
+  background-color: #111111;
+  padding: 40px 375px 40px 375px;
+  .footer-links {
+    float: left;
+    .footer-link {
+      text-decoration: none;
+      font: 300 13px/20px "Montserrat Light";
+      color: #555555;
+    }
+    .grey-color {
+      color: #959595;
+    }
+    .footer-link:hover {
+      color: @light-brown;
+    }
+  }
+  .footer-authors {
+    float: right;
+    .grey-color {
+      color: #959595;
+    }
+  }
+}
+.footer:after {
+  content: "";
+  display: block;
+  clear: both;
+}

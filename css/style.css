@@ -787,3 +787,145 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.widgets {
+  background-color: #191919;
+  width: 100%;
+  display: flex;
+  padding: 80px 375px 80px 375px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.widgets .widgets-info {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.widgets .widgets-info .widgets-info-logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 0 0 20px 0;
+}
+.widgets .widgets-info .widgets-info-logo-link .widgets-info-logo-svg {
+  fill: #fff;
+}
+.widgets .widgets-info .widgets-info-logo-link .widgets-info-logo-text {
+  color: #fff;
+  font: 400 34px/1.2 "Raleway Regular";
+}
+.widgets .widgets-info .widgets-info-logo-link:hover .widgets-info-logo-svg {
+  fill: #998675;
+}
+.widgets .widgets-info .widgets-info-logo-link:hover .widgets-info-logo-text {
+  color: #998675;
+}
+.widgets .widgets-info .widgets-info-logo-link:active .widgets-info-logo-svg {
+  fill: #ffffff;
+}
+.widgets .widgets-info .widgets-info-logo-link:active .widgets-info-logo-text {
+  color: #ffffff;
+}
+.widgets .widgets-info .widgets-info-text {
+  font: 300 14px/24px "Montserrat Light";
+  color: #555555;
+  padding: 0;
+  margin: 0 0 28px 0;
+}
+.widgets .widgets-info .widgets-info-link {
+  text-decoration: none;
+  font: 400 14px/20px "Montserrat Regular";
+  color: #d1d1d1;
+}
+.widgets .widgets-info .widgets-info-link:after {
+  content: "";
+  display: inline-block;
+  border: 5px solid transparent;
+  border-left: 5px solid #ffffff;
+  margin: 0 0 0 8px;
+}
+.widgets .widgets-posts {
+  width: 270px;
+}
+.widgets .widgets-posts .widgets-posts-header {
+  font: 700 24px/1.2 "Raleway Bold";
+  color: #ffffff;
+}
+.widgets .widgets-posts .widgets-posts-one .widgets-posts-one-date {
+  font: 300 12px/20px "Montserrat Light";
+  color: #363636;
+}
+.widgets .widgets-posts .widgets-posts-one .widgets-posts-one-text {
+  font: 300 14px/20px "Montserrat Light";
+  color: #555555;
+}
+.widgets .widgets-posts .widgets-posts-one:hover .widgets-posts-one-date {
+  color: #ffffff;
+}
+.widgets .widgets-posts .widgets-posts-one:hover .widgets-posts-one-text {
+  color: #c7b299;
+}
+.widgets .widgets-twitter {
+  width: 270px;
+}
+.widgets .widgets-twitter .widgets-twitter-header {
+  font: 700 24px/1.2 "Raleway Bold";
+  color: #ffffff;
+}
+.widgets .widgets-twitter .widgets-twitter-one .widgets-twitter-one-text {
+  font: 300 14px/20px "Montserrat Light";
+  color: #555555;
+}
+.widgets .widgets-twitter .widgets-twitter-one .widgets-twitter-one-date {
+  font: 300 12px/20px "Montserrat Light";
+  color: #363636;
+}
+.widgets .widgets-twitter .twitter-author {
+  color: #00bff3;
+}
+.widgets .widgets-twitter .twitter-hashtag {
+  color: #00bff3;
+}
+.widgets .widgets-twitter .twitter-link {
+  color: #959595;
+  text-decoration: none;
+}
+.widgets .dribbble-widget {
+  width: 280px;
+}
+.widgets .dribbble-widget .dribbble-widget-header {
+  font: 700 24px/1.2 "Raleway Bold";
+  color: #ffffff;
+}
+.footer {
+  font: 300 13px/20px "Montserrat Light";
+  color: #555555;
+  background-color: #111111;
+  padding: 40px 375px 40px 375px;
+}
+.footer .footer-links {
+  float: left;
+}
+.footer .footer-links .footer-link {
+  text-decoration: none;
+  font: 300 13px/20px "Montserrat Light";
+  color: #555555;
+}
+.footer .footer-links .grey-color {
+  color: #959595;
+}
+.footer .footer-links .footer-link:hover {
+  color: #c7b299;
+}
+.footer .footer-authors {
+  float: right;
+}
+.footer .footer-authors .grey-color {
+  color: #959595;
+}
+.footer:after {
+  content: "";
+  display: block;
+  clear: both;
+}
