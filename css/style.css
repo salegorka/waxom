@@ -440,18 +440,22 @@ body {
   margin: 0 0 0 30px;
   padding: 0;
 }
-.projects .projects-articles .projects-articles-one .projects-articles-one-lock {
+.projects .projects-articles .projects-articles-one .projects-articles-one-lock-link {
   display: none;
   position: absolute;
   top: 120px;
   left: 127px;
-  fill: #ffffff;
 }
-.projects .projects-articles .projects-articles-one .projects-articles-one-search {
+.projects .projects-articles .projects-articles-one .projects-articles-one-search-link {
   display: none;
   position: absolute;
   top: 120px;
   left: 201px;
+}
+.projects .projects-articles .projects-articles-one .projects-articles-one-lock {
+  fill: #ffffff;
+}
+.projects .projects-articles .projects-articles-one .projects-articles-one-search {
   fill: #ffffff;
 }
 .projects .projects-articles .projects-articles-one .projects-articles-one-lock:hover {
@@ -478,10 +482,10 @@ body {
 .projects .projects-articles .projects-articles-one:hover .projects-articles-one-text {
   color: #ffffff;
 }
-.projects .projects-articles .projects-articles-one:hover .projects-articles-one-search {
+.projects .projects-articles .projects-articles-one:hover .projects-articles-one-search-link {
   display: block;
 }
-.projects .projects-articles .projects-articles-one:hover .projects-articles-one-lock {
+.projects .projects-articles .projects-articles-one:hover .projects-articles-one-lock-link {
   display: block;
 }
 .projects .projects-articles .projects-articles-one:hover:before {
