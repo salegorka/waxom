@@ -75,6 +75,91 @@
   }
 }
 
+.purchase {
+  width: 100%;
+  background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+
+  .purchase-wrapper {}
+
+  .purchase-header {
+    font: 400 28px/1.2 "Raleway Regular";
+    color: @white;
+    padding: 0;
+    margin: 0;
+
+    .purchase-header-color {
+      color: #c7b299;
+    }
+  }
+
+  .purchase-text {
+    margin: 0;
+    padding: 0;
+    font: 300 18px/1.2 "Montserrat Light";
+    color: #615855;
+  }
+
+  .purchase-button {
+    display: flex;
+    width: 170px;
+    min-height: 50px;
+    border-radius: 3px;
+    background-color: @brown;
+    color: @white;
+    font: 800 14px/23px "Raleway ExtraBold";
+    text-transform: uppercase;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.projects {
+
+  .projects-header {
+    font: 600 30px/1.2 "Raleway SemiBold";
+    color: #555555;
+  }
+
+  .projects-text {
+    font: 300 16px/28px "Montserrat Light";
+    color: #8c8c8c;
+  }
+
+  .projects-articles {
+
+    .projects-articles-one {
+      background-color: #fbfaf8;
+
+      .projects-articles-one-img {}
+
+      .projects-articles-one-header {
+        font: 500 20px/1.2 "Raleway Medium";
+        color: #c7b299;
+      }
+
+      .projects-articles-one-text {
+        font: 300 14px/20px "Montserrat Light";
+        color: #d1d1d1;
+      }
+    }
+  }
+
+  .projects-loadbutt {
+    width: 170px;
+    min-height: 50px;
+    background-color: @brown;
+    border-radius: 3px;
+    font: 800 14px/23px "Raleway ExtraBold";
+    color: @white;
+    text-transform: uppercase;
+    outline: none;
+    ;
+  }
+
+}
+
 @media screen and (min-device-width: 481px) {
 
   body {
@@ -372,10 +457,8 @@
   }
 
   .purchase {
-    width: 100%;
     padding: 50px 375px 50px 375px;
     box-sizing: border-box;
-    background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
 
     .purchase-wrapper {
       float: left;
@@ -383,10 +466,6 @@
     }
 
     .purchase-header {
-      font: 400 28px/1.2 "Raleway Regular";
-      color: @white;
-      padding: 0;
-      margin: 0;
       width: 540px;
 
       .purchase-header-color {
@@ -396,25 +475,9 @@
 
     .purchase-text {
       width: 540px;
-      margin: 0;
-      padding: 0;
-      font: 300 18px/1.2 "Montserrat Light";
-      color: #615855;
     }
 
-    .purchase-button {
-      display: flex;
-      width: 170px;
-      min-height: 50px;
-      border-radius: 3px;
-      background-color: @brown;
-      color: @white;
-      font: 800 14px/23px "Raleway ExtraBold";
-      text-transform: uppercase;
-      text-decoration: none;
-      justify-content: center;
-      align-items: center;
-    }
+    .purchase-button {}
 
     .purchase-button:hover {
       background-color: @white;
@@ -440,15 +503,11 @@
     padding: 0 200px 0 200px;
 
     .projects-header {
-      font: 600 30px/1.2 "Raleway SemiBold";
-      color: #555555;
       margin: 75px 0 20px 0;
       padding: 0;
     }
 
     .projects-text {
-      font: 300 16px/28px "Montserrat Light";
-      color: #8c8c8c;
       margin: 0 0 35px 0;
       padding: 0;
     }
@@ -490,15 +549,11 @@
         .projects-articles-one-img {}
 
         .projects-articles-one-header {
-          font: 500 20px/1.2 "Raleway Medium";
-          color: #c7b299;
           margin: 25px 0 6px 30px;
           padding: 0;
         }
 
         .projects-articles-one-text {
-          font: 300 14px/20px "Montserrat Light";
-          color: #d1d1d1;
           margin: 0 0 0 30px;
           padding: 0;
         }
@@ -570,14 +625,6 @@
     }
 
     .projects-loadbutt {
-      width: 170px;
-      min-height: 50px;
-      background-color: @brown;
-      border-radius: 3px;
-      font: 800 14px/23px "Raleway ExtraBold";
-      color: @white;
-      text-transform: uppercase;
-      outline: none;
       margin: 8px 0 80px 0;
     }
 
@@ -1154,7 +1201,7 @@
       width: 30px;
       height: 30px;
       float: right;
-      
+
       input {
         position: relative;
         display: block;
@@ -1185,6 +1232,7 @@
 
       .mobile-menu {
         width: 100%;
+        height: 300px;
         position: absolute;
         top: 60px;
         right: 0;
@@ -1245,11 +1293,80 @@
     }
 
     .purchase {
-      display: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0 20px 0;
+
+      .purchase-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0 20px 0;
+
+        .purchase-header {
+          text-align: center;
+          margin: 0 0 20px 0;
+        }
+
+        .purchase-text {
+          text-align: center;
+        }
+      }
+
+      .purchase-button {}
     }
 
     .projects {
-      display: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .projects-header {}
+
+      .projects-text {
+        display: none;
+      }
+
+      .projects-menu {
+        display: none;
+      }
+
+      .projects-articles {
+        .projects-articles-one {
+          border: 3px solid #fbfaf8;
+          margin: 0 0 30px 0;
+
+          .projects-articles-one-img {
+            width: 300px;
+            height: auto;
+          }
+
+          .projects-articles-one-header {
+            text-align: center;
+            margin: 10px 0 10px 0;
+            padding: 0;
+          }
+
+          .projects-articles-one-text {
+            text-align: center;
+            margin: 5px 0 5px 0;
+            padding: 0;
+          }
+
+          .projects-articles-one-lock-link {
+            display: none;
+          }
+
+          .projects-articles-one-search-link {
+            display: none;
+          }
+        }
+      }
+
+      .projects-loadbutt {
+        margin: 20px;
+      }
     }
 
     .videopres {
@@ -1257,7 +1374,41 @@
     }
 
     .mobile {
-      display: none;
+      width: 100%;
+      margin: 0;
+      padding: 10px 10px 10px 10px;
+      box-sizing: border-box;
+      background-color: #fff;
+
+      .mobile-wrapper {
+
+
+        .mobile-header {
+          font: 600 30px/1.2 "Raleway SemiBold";
+          color: #555555;
+          text-align: center;
+        }
+
+        .mobile-text {
+          font: 300 16px/28px "Montserrat Light";
+          color: #8c8c8c;
+          text-align: center;
+        }
+
+        .mobile-details {
+          .mobile-details-summary {
+            font: 300 16px/32px "Montserrat Light";
+            color: #8c8c8c;
+          }
+
+          .mobile-details-text {
+            font: 300 16px/32px "Montserrat Light";
+            color: #8c8c8c;
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
     }
 
     .stats {
@@ -1265,7 +1416,113 @@
     }
 
     .posts {
-      display: none;
+      width: 100%;
+      box-sizing: border-box;
+
+      .posts-header {
+        font: 600 30px/1.2 "Raleway SemiBold";
+        color: #555555;
+        width: 100%;
+        text-align: center;
+        margin: 0 0 20px 0;
+        padding: 0;
+      }
+
+      .posts-text {
+        display: none;
+      }
+
+      .posts-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .posts-article {
+          width: 300px;
+          border: 1px solid #f8f8f8;
+          position: relative;
+          padding: 0 0 28px 0;
+          margin: 10px 0 20px 0;
+
+          .posts-article-img {
+            width: 300px;
+            height: auto;
+          }
+
+          .posts-article-header {
+            font: 500 20px/1.2 "Raleway Medium";
+            color: #555555;
+            margin: 25px 0 0 25px;
+            padding: 0;
+          }
+
+          .posts-article-text {
+            font: 300 14px/22px "Montserrat Light";
+            color: #8c8c8c;
+            margin: 12px 0 20px 25px;
+            padding: 0;
+          }
+
+          .posts-article-link {
+            text-decoration: none;
+            font: 300 14px/20px "Montserrat Light";
+            color: @light-brown;
+            margin: 0 0 0 25px;
+            padding: 0;
+          }
+
+          .posts-article-link:after {
+            content: "";
+            display: inline-block;
+            border: 5px solid transparent;
+            border-left: 5px solid @light-brown;
+            margin: 0 0 0 8px;
+          }
+
+          .posts-article-pagination {
+            display: none;
+          }
+
+
+          .posts-article-date {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+
+            .posts-article-date-number {
+              font: 300 24px/20px "Montserrat Light";
+              color: #fff;
+              display: block;
+              width: 50px;
+              min-height: 35px;
+              background-color: #363636;
+              border-radius: 3px 3px 0 0;
+              text-align: center;
+              padding: 8px 0 8px 0;
+              box-sizing: border-box;
+            }
+
+            .posts-article-date-month {
+              font: 400 12px/20px "Roboto Regular";
+              color: #fff;
+              display: block;
+              width: 50px;
+              min-height: 25px;
+              background-color: #252525;
+              border-radius: 0 0 3px 3px;
+              text-align: center;
+              padding: 5px 0 5px 0;
+              box-sizing: border-box;
+            }
+          }
+        }
+
+
+      }
+
+      .posts-control {
+        display: none;
+      }
     }
 
     .partners {
@@ -1278,6 +1535,35 @@
   }
 
   .footer {
-    display: none;
+    font: 300 13px/20px "Montserrat Light";
+    color: #555555;
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .footer-links {
+
+      .footer-link {
+        text-decoration: none;
+        font: 300 13px/20px "Montserrat Light";
+        color: #555555;
+      }
+
+      .grey-color {
+        color: #959595;
+      }
+
+      .footer-link:hover {
+        color: @light-brown;
+      }
+    }
+
+    .footer-authors {
+
+      .grey-color {
+        color: #959595;
+      }
+    }
   }
 }
